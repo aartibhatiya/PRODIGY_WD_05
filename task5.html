@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="task5.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <section id="weather">
+            <p>Enter a location or use your current location to get the weather details.</p>
+            <form id="locationForm">
+                <input type="text" id="locationInput" placeholder="Enter city name..." />
+                <button type="submit">Get Weather</button>
+            </form>
+            <button id="currentLocationBtn">Use Current Location</button>
+            <div id="weatherData" class="hidden">
+                <h2>Weather in <span id="cityName"></span></h2>
+                <p id="temperature"></p>
+                <p id="conditions"></p>
+                <p id="humidity"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Weather App</p>
+    </footer>
+    <script src="task.js"></script>
+</body>
+</html>
